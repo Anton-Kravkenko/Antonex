@@ -3,7 +3,7 @@ import Description from "@/app/components/ui/description/description";
 import Heading from "@/app/components/ui/heading/heading";
 import {githubLink} from "@/app/data/constants";
 import {projects} from "@/app/data/projects/projects";
-import SectionBox from "@/app/sections/ui/section-box/section-box";
+import SectionBox from "@/app/components/sections/ui/section-box/section-box";
 import {Color} from "@/app/utils/colors";
 import Image from "next/image";
 import {AiOutlineCode} from "react-icons/ai";

@@ -1,7 +1,7 @@
 import Heading from "@/app/components/ui/heading/heading";
 import Icon, {IconProps} from "@/app/components/ui/icon/icon";
 import {TechAdditions} from "@/app/data/tech";
-import Tooltip from "@/app/sections/tech/ui/tooltip/tooltip";
+import Tooltip from "@/app/components/sections/tech/ui/tooltip/tooltip";
 import {Color} from "@/app/utils/colors";
 import {FC} from "react";
 import {HiFire} from "react-icons/hi";

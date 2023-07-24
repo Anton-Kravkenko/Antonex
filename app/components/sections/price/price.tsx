@@ -1,6 +1,6 @@
 import {price} from "@/app/data/price";
-import PriceCart from "@/app/sections/price/ui/price-cart";
-import SectionBox from "@/app/sections/ui/section-box/section-box";
+import PriceCart from "@/app/components/sections/price/ui/price-cart";
+import SectionBox from "@/app/components/sections/ui/section-box/section-box";
 import { lineColorType} from "@/app/utils/colors";
 import {RiMoneyDollarCircleLine} from "react-icons/ri";
 

@@ -1,7 +1,7 @@
 import Heading from "@/app/components/ui/heading/heading";
 import {specialization} from "@/app/data/specialization";
-import SpecializationItem from "@/app/sections/specialization/ui/specialization-item";
-import SectionBox from "@/app/sections/ui/section-box/section-box";
+import SpecializationItem from "@/app/components/sections/specialization/ui/specialization-item";
+import SectionBox from "@/app/components/sections/ui/section-box/section-box";
 import {RiArrowRightDoubleLine} from "react-icons/ri";
 
 const Specialization = () => {

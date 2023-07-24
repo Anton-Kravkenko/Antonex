@@ -1,6 +1,6 @@
 import {tech} from "@/app/data/tech";
-import Stack from "@/app/sections/tech/ui/stack";
-import SectionBox from "@/app/sections/ui/section-box/section-box";
+import Stack from "@/app/components/sections/tech/ui/stack";
+import SectionBox from "@/app/components/sections/ui/section-box/section-box";
 import {lineColorType} from "@/app/utils/colors";
 import {AiOutlineRadarChart} from "react-icons/ai";
 

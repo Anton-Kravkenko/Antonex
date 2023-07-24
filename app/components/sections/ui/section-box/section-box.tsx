@@ -1,12 +1,12 @@
 import Heading from "@/app/components/ui/heading/heading";
-import SectionLink from "@/app/sections/ui/section-link/section.link";
+import SectionLink from "@/app/components/sections/ui/section-link/section.link";
 import {IconTypeProps} from "@/app/types/global";
 import {FC, PropsWithChildren} from "react";
 
 interface SectionBoxProps extends IconTypeProps{
 	mt?: number
 	title: string
-	description: string
+	description: string | JSX.Element
 }
 const SectionBox:FC<PropsWithChildren<SectionBoxProps>> = ({children, mt=180,...props}) => {
 	return <div style={{

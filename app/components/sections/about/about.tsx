@@ -2,7 +2,7 @@ import Button from "@/app/components/ui/button/button";
 import Description from "@/app/components/ui/description/description";
 import Heading from "@/app/components/ui/heading/heading";
 import {about} from "@/app/data/about";
-import SectionBox from "@/app/sections/ui/section-box/section-box";
+import SectionBox from "@/app/components/sections/ui/section-box/section-box";
 import {Color} from "@/app/utils/colors";
 import {GoPerson} from "react-icons/go";
 const About = () => {
