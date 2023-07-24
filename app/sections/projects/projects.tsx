@@ -1,3 +1,4 @@
+import Button from "@/app/components/ui/button/button";
 import Description from "@/app/components/ui/description/description";
 import Heading from "@/app/components/ui/heading/heading";
 import {githubLink} from "@/app/data/constants";
@@ -17,7 +18,7 @@ const Projects = () => {
 				</Description>
 				{
 					projects.map((project) => {
-						return <div className='mt-10 h-full bg-twilight p-4 rounded-xl  flex gap-3' key={project.title}>
+						return <Button type={'twilight'} className='mt-10 h-full rounded-xl flex gap-3' key={project.title}>
 							<Image key={project.image} src={project.image} alt={'Image'} className='w-[150px] rounded-lg'/>
 							<div className='justify-between h-auto grid items-center'>
 								<div className='justify-between flex items-center'>
@@ -44,7 +45,7 @@ const Projects = () => {
 									}
 								</div>
 							</div>
-						</div>
+						</Button>
 					})
 				}
 			</div>

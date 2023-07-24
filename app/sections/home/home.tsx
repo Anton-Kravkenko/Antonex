@@ -13,7 +13,7 @@ const Home = () => {
 			Say Hi from <a className='text-primary font-bold' href={`mailto: antonkzavcenco05@gmail.com`}>Anton</a>,
 			Web Developer <br/> and  Mobile Developer
 		</Heading>
-		<Description className='mt-4' color={Color.charcoal}>
+		<Description className='mt-4 w-[80%]' color={Color.charcoal}>
 			{
 `I'm a web developer and mobile developer. I can help you build a website or mobile application. I have experience in building websites and mobile applications using React, React Native, Next.js, TailwindCSS, and other technologies.`
 			}

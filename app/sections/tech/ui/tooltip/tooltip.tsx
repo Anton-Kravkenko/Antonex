@@ -8,7 +8,7 @@ export interface  TooltipProps {
 	additions: TechAdditions[]
 	}
 const Tooltip:FC<TooltipProps> = ({additions}) => {
-	return <span className="absolute w-fit flex-wrap flex bottom-[-50px] scale-0 transition-all rounded-lg bg-twilight p-2 group-hover:scale-100 duration-300">
+	return <span className="absolute z-50 w-fit flex-wrap flex bottom-[-50px] scale-0 transition-all rounded-lg bg-twilight p-2 group-hover:scale-100 duration-300">
 				{
 					additions.map((item) => {
 						return <div key={item.id} className='p-4 scale-100 border-dusk border-2 m-2 rounded-xl hover:border-primary duration-75 ease-linear hover:scale-105'>

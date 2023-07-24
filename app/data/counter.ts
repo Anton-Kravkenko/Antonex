@@ -6,7 +6,7 @@ export const counterData = [{
 		description: 'Technologies',
 }, {
 		id: 2,
-		number: 3000,
+		number: 2000,
 		description: 'Hours of coding',
 },
 	{

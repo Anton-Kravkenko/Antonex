@@ -1,3 +1,4 @@
+import Button from "@/app/components/ui/button/button";
 import Description from "@/app/components/ui/description/description";
 import Heading from "@/app/components/ui/heading/heading";
 import {about} from "@/app/data/about";
@@ -14,16 +15,16 @@ const About = () => {
 		<Heading className='mb-2 mt-2' color={Color.silver}>
 			Languages:
 		</Heading>
-		<div className='flex '>
+		<div className='flex'>
 			{about.language.map((lang) => {
-				return <div key={lang.name} className='border-2 scale-100 border-dusk bg-none p-4 mr-3 rounded-lg items-center hover:scale-105 transition-all duration-300 ease-linear active:scale-100'>
+				return <Button type='twilight' key={lang.name} className='border-2  border-dusk bg-none p-4 mr-3 rounded-lg items-center hover:border-primary transition-all duration-300'>
 					<Heading size={24}>
 						{lang.name}
 					</Heading>
 					<Description color={Color.charcoal} size={16}>
 						{lang.level}
 					</Description>
-				</div>
+				</Button>
 			})
 			}
 		</div>

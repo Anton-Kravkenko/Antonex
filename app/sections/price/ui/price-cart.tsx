@@ -14,7 +14,7 @@ interface PriceCartProps extends   Omit<IconProps, 'href'>{
 }
 
 const PriceCart:FC<PriceCartProps> = (props) => {
-	return <div className=' bg-twilight inline-block border-0 p-4 w-[400px] rounded-xl scale-100 ml-0 m-2 hover:scale-95 duration-75 ease-linear' style={{
+	return <div className=' bg-twilight inline-block border-0 p-4 w-[400px] rounded-xl scale-100 ml-0 m-2 hover:scale-95 duration-75 ease-linear active:scale-100' style={{
 		border: props.hit ? '1px solid #FA7921' : '2px solid #1E1E1E'
 	}} >
 	<div className='justify-between items-center flex'>
