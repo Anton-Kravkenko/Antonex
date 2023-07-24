@@ -1,4 +1,4 @@
-import {theme} from '../../tailwind.config'
+import { theme } from '../../tailwind.config'
 
 export type colorsType = {
 	silver: '#E5E5E5'

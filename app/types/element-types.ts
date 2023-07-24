@@ -1,14 +1,15 @@
-import {ButtonHTMLAttributes, CSSProperties} from "react";
+import { ButtonHTMLAttributes, CSSProperties } from 'react'
 
 export interface stylesProps {
-	className?: string;
+	className?: string
 	style?: CSSProperties
 }
 
 export interface clickProps {
-	onClick?: () => void;
+	onClick?: () => void
 }
 
-export type DivProps = Pick<ButtonHTMLAttributes<HTMLDivElement>, 'children' | 'style' | 'onClick'
-	| 'className' | 'id' | 'disabled'| 'role'
+export type DivProps = Pick<
+	ButtonHTMLAttributes<HTMLDivElement>,
+	'children' | 'style' | 'onClick' | 'className' | 'id' | 'disabled' | 'role'
 >

@@ -1,25 +1,27 @@
-import type {Metadata} from 'next'
-import {Space_Grotesk} from 'next/font/google'
+import type { Metadata } from 'next'
+import { Space_Grotesk } from 'next/font/google'
+import { ReactNode } from 'react'
 import './globals.css'
-import {ReactNode} from "react";
 const SpaceGrotesk = Space_Grotesk({ subsets: ['latin'] })
 interface LayoutProps {
-  children: ReactNode
+	children: ReactNode
 }
 export const metadata: Metadata = {
-  title: 'Antonex',
-  description: 'Anton - Web Developer',
-  icons: {
-    icon: 'public/favicon.ico',
-  }
+	title: 'Antonex',
+	description: 'Anton - Web Developer',
+	icons: {
+		icon: 'public/favicon.ico'
+	}
 }
 
-export default function RootLayout({
-  children,
-}: LayoutProps) {
-  return (
-    <html lang="en">
-      <body  suppressHydrationWarning={true} className={`${SpaceGrotesk.className} bg-midnight text-white  h-[100vh]`}>{children}</body>
-    </html>
-  )
+export default function RootLayout({ children }: LayoutProps) {
+	return (
+		<html lang='en'>
+			<body
+				suppressHydrationWarning={true}
+				className={`${SpaceGrotesk.className} h-[100vh] bg-midnight  text-white`}>
+				{children}
+			</body>
+		</html>
+	)
 }
