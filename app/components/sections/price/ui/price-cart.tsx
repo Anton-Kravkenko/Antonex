@@ -12,8 +12,7 @@ interface PriceCartProps extends Omit<IconProps, 'href'> {
 	hit: boolean
 }
 
-const PriceCart: FC<PriceCartProps> = props => {
-	return (
+const PriceCart: FC<PriceCartProps> = props => (
 		<div
 			className=' m-2 ml-0 inline-block w-[400px] scale-100 rounded-xl border-0 bg-twilight p-4 duration-75 ease-linear hover:scale-95 active:scale-100'
 			style={{
@@ -47,6 +46,5 @@ const PriceCart: FC<PriceCartProps> = props => {
 			</div>
 		</div>
 	)
-}
 
 export default PriceCart

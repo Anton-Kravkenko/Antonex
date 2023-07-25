@@ -1,7 +1,7 @@
 import { AiFillBug } from 'react-icons/ai'
 import { BsHandThumbsUpFill } from 'react-icons/bs'
 import { HiTrophy } from 'react-icons/hi2'
-import { TbDeviceDesktopCode, TbDeviceMobileCode } from 'react-icons/tb'
+import { TbDeviceMobileCode } from 'react-icons/tb'
 
 export const price = [
 	{

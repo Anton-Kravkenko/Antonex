@@ -12,8 +12,7 @@ interface StackProps extends IconProps {
 	loved: boolean
 	additions: TechAdditions[]
 }
-const Stack: FC<StackProps> = props => {
-	return (
+const Stack: FC<StackProps> = props => (
 		<div className='items-center justify-center'>
 			<button className='group flex h-[190px] w-[150px] items-center justify-center overflow-visible rounded-2xl border-2 border-twilight p-5 duration-300 ease-linear hover:border-primary'>
 				<Tooltip additions={props.additions} />
@@ -34,6 +33,5 @@ const Stack: FC<StackProps> = props => {
 			)}
 		</div>
 	)
-}
 
 export default Stack

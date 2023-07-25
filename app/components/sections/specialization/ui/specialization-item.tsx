@@ -9,8 +9,7 @@ interface SpecializationItemProps extends Omit<IconProps, 'href'> {
 	title: string
 	description: string
 }
-const SpecializationItem: FC<SpecializationItemProps> = props => {
-	return (
+const SpecializationItem: FC<SpecializationItemProps> = props => (
 		<Button
 			type={'twilight'}
 			className='mt-4 flex w-[80%] justify-between rounded-xl p-4
@@ -26,6 +25,5 @@ const SpecializationItem: FC<SpecializationItemProps> = props => {
 			<Icon icon={props.icon} size={props.size} color={props.color} />
 		</Button>
 	)
-}
 
 export default SpecializationItem

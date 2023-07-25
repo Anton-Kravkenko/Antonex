@@ -4,15 +4,13 @@ import { tech } from '@/app/data/tech'
 import { lineColorType } from '@/app/utils/colors'
 import { AiOutlineRadarChart } from 'react-icons/ai'
 
-const Tech = () => {
-	return (
+const Tech = () => (
 		<SectionBox
 			title={'Tech'}
 			description={'My Hard Skills'}
 			icon={AiOutlineRadarChart}>
 			<div className='relative mt-4 flex w-full flex-wrap gap-5'>
-				{tech.map(item => {
-					return (
+				{tech.map(item => (
 						<Stack
 							loved={!!item.loved}
 							additions={item.additions}
@@ -22,11 +20,9 @@ const Tech = () => {
 							color={item.color as lineColorType}
 							key={item.id}
 						/>
-					)
-				})}
+					))}
 			</div>
 		</SectionBox>
 	)
-}
 
 export default Tech

@@ -13,8 +13,7 @@ const SectionLink: FC<SectionLinkProps> = ({
 	title,
 	color = Color.white,
 	...props
-}) => {
-	return (
+}) => (
 		<div className='w-fit'>
 			<Button
 				size={'sm'}
@@ -28,6 +27,5 @@ const SectionLink: FC<SectionLinkProps> = ({
 			</Button>
 		</div>
 	)
-}
 
 export default SectionLink

@@ -12,8 +12,7 @@ const SectionBox: FC<PropsWithChildren<SectionBoxProps>> = ({
 	children,
 	mt = 180,
 	...props
-}) => {
-	return (
+}) => (
 		<div
 			style={{
 				marginTop: mt
@@ -25,6 +24,5 @@ const SectionBox: FC<PropsWithChildren<SectionBoxProps>> = ({
 			{children}
 		</div>
 	)
-}
 
 export default SectionBox

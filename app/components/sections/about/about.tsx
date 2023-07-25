@@ -5,8 +5,7 @@ import Heading from '@/app/components/ui/heading/heading'
 import { about } from '@/app/data/about'
 import { Color } from '@/app/utils/colors'
 import { GoPerson } from 'react-icons/go'
-const About = () => {
-	return (
+const About = () => (
 		<SectionBox title={'About'} description={'My dev way'} icon={GoPerson}>
 			<Description className='w-[70%]' color={Color.charcoal} size={16}>
 				{about.description}
@@ -29,6 +28,5 @@ const About = () => {
 			</div>
 		</SectionBox>
 	)
-}
 
 export default About

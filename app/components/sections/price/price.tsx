@@ -4,14 +4,12 @@ import { price } from '@/app/data/price'
 import { lineColorType } from '@/app/utils/colors'
 import { RiMoneyDollarCircleLine } from 'react-icons/ri'
 
-const Price = () => {
-	return (
+const Price = () => (
 		<SectionBox
 			title={'Price'}
 			description={'Pricing Plans'}
 			icon={RiMoneyDollarCircleLine}>
-			{price.map(item => {
-				return (
+			{price.map(item => (
 					<PriceCart
 						key={item.id}
 						hit={!!item.hit}
@@ -22,10 +20,8 @@ const Price = () => {
 						description={item.description}
 						icon={item.icon}
 					/>
-				)
-			})}
+				))}
 		</SectionBox>
 	)
-}
 
 export default Price

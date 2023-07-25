@@ -5,8 +5,7 @@ import Heading from '@/app/components/ui/heading/heading'
 import { Color } from '@/app/utils/colors'
 import Image from 'next/image'
 
-const LeftBar = () => {
-	return (
+const LeftBar = () => (
 		<div className='fixed bottom-5 top-5 h-[calc(100vh-2.5rem)] w-[25%] rounded-2xl border-2 border-twilight p-8'>
 			<div className='flex items-center  justify-between'>
 				<Heading color={Color.white} bold>
@@ -40,6 +39,5 @@ const LeftBar = () => {
 			</Button>
 		</div>
 	)
-}
 
 export default LeftBar

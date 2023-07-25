@@ -5,8 +5,7 @@ import { counterData } from '@/app/data/counter'
 import { Color } from '@/app/utils/colors'
 import { AiOutlineHome } from 'react-icons/ai'
 
-const Home = () => {
-	return (
+const Home = () => (
 		<SectionBox
 			mt={10}
 			title={'Home'}
@@ -19,7 +18,9 @@ const Home = () => {
 						href={`mailto: antonkzavcenco05@gmail.com`}>
 						Anton
 					</a>
-					, Mobile Developer <br /> who loves to code and create new things.
+					, Mobile Developer <br /> who <span className='text-crimson'>
+					loves
+				</span>  to  code and <br/>  create new things for people 🚀
 				</span>
 			}>
 			<Description className='mt-4 w-[80%]' color={Color.charcoal}>
@@ -29,18 +30,15 @@ const Home = () => {
 			</Description>
 
 			<div className='mt-10 flex gap-16'>
-				{counterData.map(item => {
-					return (
+				{counterData.map(item => (
 						<Counter
 							key={item.id}
 							number={item.number}
 							description={item.description}
 						/>
-					)
-				})}
+					))}
 			</div>
 		</SectionBox>
 	)
-}
 
 export default Home

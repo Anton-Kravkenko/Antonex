@@ -8,8 +8,7 @@ import { Color } from '@/app/utils/colors'
 import Image from 'next/image'
 import { AiOutlineCode } from 'react-icons/ai'
 
-const Projects = () => {
-	return (
+const Projects = () => (
 		<SectionBox
 			title={'Projects'}
 			description={'Best Projects'}
@@ -22,8 +21,7 @@ const Projects = () => {
 					</a>{' '}
 					for more projects
 				</Description>
-				{projects.map(project => {
-					return (
+				{projects.map(project => (
 						<Button
 							type={'twilight'}
 							className='mt-10 flex h-full gap-3 rounded-xl'
@@ -52,23 +50,19 @@ const Projects = () => {
 									<Heading size={18} bold className='mr-4 mt-3.5'>
 										Technologies:
 									</Heading>
-									{project.technologies.map(link => {
-										return (
+									{project.technologies.map(link => (
 											<div
 												key={link}
 												className='text-md s mr-2 mt-2 rounded-xl bg-dusk p-2 font-bold text-primary'>
 												{link}
 											</div>
-										)
-									})}
+										))}
 								</div>
 							</div>
 						</Button>
-					)
-				})}
+					))}
 			</div>
 		</SectionBox>
 	)
-}
 
 export default Projects

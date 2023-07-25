@@ -7,8 +7,7 @@ interface CounterProps {
 	number: number
 	description: string
 }
-const Counter: FC<CounterProps> = props => {
-	return (
+const Counter: FC<CounterProps> = props => (
 		<div>
 			<Heading color={Color.primary} size={56} bold>
 				{props.number}+
@@ -18,6 +17,5 @@ const Counter: FC<CounterProps> = props => {
 			</Description>
 		</div>
 	)
-}
 
 export default Counter
