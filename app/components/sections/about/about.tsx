@@ -15,8 +15,7 @@ const About = () => {
 				Languages:
 			</Heading>
 			<div className='flex'>
-				{about.language.map(lang => {
-					return (
+				{about.language.map(lang => (
 						<Button
 							type='twilight'
 							key={lang.name}
@@ -26,8 +25,7 @@ const About = () => {
 								{lang.level}
 							</Description>
 						</Button>
-					)
-				})}
+					))}
 			</div>
 		</SectionBox>
 	)

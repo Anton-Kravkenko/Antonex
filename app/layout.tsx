@@ -7,10 +7,11 @@ interface LayoutProps {
 	children: ReactNode
 }
 export const metadata: Metadata = {
-	title: 'Antonex',
+	title: 'Anton K. - Mobile Developer',
 	description: 'Anton - Web Developer',
 	icons: {
-		icon: 'public/favicon.ico'
+		icon: 'favicon.ico',
+		apple: 'favicon.ico',
 	}
 }
 
