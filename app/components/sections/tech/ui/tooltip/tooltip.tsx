@@ -8,28 +8,23 @@ export interface TooltipProps {
 	additions: TechAdditions[]
 }
 const Tooltip: FC<TooltipProps> = ({ additions }) => (
-		<span className='xl:bottom-[-50px] lg:justify-normal left-0 justify-between w-fit absolute z-50 flex scale-0 flex-wrap rounded-lg bg-twilight p-2 transition-all duration-300 group-hover:scale-100'>
-			{additions.map(item => (
-					<div
-						key={item.id}
-						className='w-[100%] lg:w-fit m-2 scale-100 rounded-xl border-2 border-dusk p-4 duration-75 ease-linear hover:scale-105 hover:border-primary'>
-						<Icon
-							icon={item.icon}
-							className='mx-auto'
-							color={item.color as lineColorType}
-							size={48}
-						/>
-						<Heading
-							size={18}
-							color={Color.primary}
-							bold
-							center
-							className='mt-4'>
-							{item.title}
-						</Heading>
-					</div>
-				))}
-		</span>
-	)
+	<span className='absolute left-0 z-50 flex w-fit scale-0 flex-wrap justify-between rounded-lg bg-twilight p-2 transition-all duration-300 group-hover:scale-100 sm:justify-normal xl:bottom-[-50px]'>
+		{additions.map(item => (
+			<div
+				key={item.id}
+				className='m-2 w-[100%] scale-100 rounded-xl border-2 border-dusk p-4 duration-75 ease-linear hover:scale-105 hover:border-primary sm:w-fit'>
+				<Icon
+					icon={item.icon}
+					className='mx-auto'
+					color={item.color as lineColorType}
+					size={48}
+				/>
+				<Heading size={18} color={Color.primary} bold center className='mt-4'>
+					{item.title}
+				</Heading>
+			</div>
+		))}
+	</span>
+)
 
 export default Tooltip

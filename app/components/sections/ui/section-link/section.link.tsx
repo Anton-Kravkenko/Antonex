@@ -14,18 +14,18 @@ const SectionLink: FC<SectionLinkProps> = ({
 	color = Color.white,
 	...props
 }) => (
-		<div className='w-fit'>
-			<Button
-				size={'sm'}
-				type={'twilight'}
-				className='flex w-fit items-center rounded-full bg-twilight'
-				{...props}>
-				<Icon icon={icon} size={size} color={color} />
-				<Description size={12} color={color} className='ml-2'>
-					{title}
-				</Description>
-			</Button>
-		</div>
-	)
+	<div className='w-fit'>
+		<Button
+			size={'sm'}
+			type={'twilight'}
+			className='flex w-fit items-center rounded-full bg-twilight'
+			{...props}>
+			<Icon icon={icon} size={size} color={color} />
+			<Description size={12} color={color} className='ml-2'>
+				{title}
+			</Description>
+		</Button>
+	</div>
+)
 
 export default SectionLink

@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 	description: 'Anton - Web Developer',
 	icons: {
 		icon: 'favicon.ico',
-		apple: 'favicon.ico',
+		apple: 'favicon.ico'
 	}
 }
 

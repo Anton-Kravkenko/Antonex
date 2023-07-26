@@ -10,17 +10,17 @@ interface TitleProps
 	center?: boolean
 }
 const Heading: FC<TitleProps> = ({ style, ...props }) => (
-		<h2
-			style={{
-				fontSize: props.size || '24px',
-				fontWeight: props.bold ? 'bold' : 'normal',
-				color: props.color || Color.white,
-				textAlign: props.center ? 'center' : 'left',
-				...style
-			}}
-			{...props}>
-			{props.children}
-		</h2>
-	)
+	<h2
+		style={{
+			fontSize: props.size || '24px',
+			fontWeight: props.bold ? 'bold' : 'normal',
+			color: props.color || Color.white,
+			textAlign: props.center ? 'center' : 'left',
+			...style
+		}}
+		{...props}>
+		{props.children}
+	</h2>
+)
 
 export default Heading

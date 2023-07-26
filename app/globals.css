@@ -7,8 +7,15 @@
 		--foreground-rgb: 255, 255, 255;
 		--background-start-rgb: 0, 0, 0;
 		--background-end-rgb: 0, 0, 0;
+		outline: transparent !important;
+		-webkit-tap-highlight-color: transparent;
 	}
 }
+:focus {
+	outline: none; /* no outline - for most browsers */
+	box-shadow: none; /* no box shadow - for some browsers or if you are using Bootstrap */
+}
+
 a.overlay {
 	width: 100%;
 	height: 100%;

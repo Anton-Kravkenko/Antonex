@@ -6,25 +6,25 @@ import { FC, PropsWithChildren } from 'react'
 interface SectionBoxProps extends IconTypeProps {
 	mt?: number
 	title: string
-	description: string | JSX.Element
-	descriptionSize?: 18 | 24 | 32 | 48 | 56 | 64
+	description?: string | JSX.Element
 }
 const SectionBox: FC<PropsWithChildren<SectionBoxProps>> = ({
 	children,
-	descriptionSize = 48,
 	mt = 180,
 	...props
 }) => (
-		<div
-			style={{
-				marginTop: mt
-			}}>
-			<SectionLink title={props.title} icon={props.icon} />
-			<Heading size={descriptionSize} className='mt-2'>
-					{props.description}
-				</Heading>
-			{children}
-		</div>
-	)
+	<div
+		style={{
+			marginTop: mt
+		}}>
+		<SectionLink title={props.title} icon={props.icon} />
+		{props.description && (
+			<Heading size={48} className='mt-2'>
+				{props.description}
+			</Heading>
+		)}
+		{children}
+	</div>
+)
 
 export default SectionBox

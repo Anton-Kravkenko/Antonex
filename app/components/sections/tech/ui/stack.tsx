@@ -13,25 +13,25 @@ interface StackProps extends IconProps {
 	additions: TechAdditions[]
 }
 const Stack: FC<StackProps> = props => (
-		<div className='items-center justify-center'>
-			<button className='group flex h-[190px] w-[150px] items-center justify-center overflow-visible rounded-2xl border-2 border-twilight p-5 duration-300 ease-linear hover:border-primary'>
-				<Tooltip additions={props.additions} />
-				<div>
-					<Icon icon={props.icon} size={80} color={props.color} />
-					<Heading size={24} color={Color.primary} bold center className='mt-4'>
-						{props.progress}%
-					</Heading>
-				</div>
-			</button>
-			<Heading center size={24} className='mt-2'>
-				{props.title}
-			</Heading>
-			{props.loved && (
-				<div className='absolute top-[-10px] ml-[-10px] rounded-full bg-twilight p-2'>
-					<Icon icon={HiFire} size={32} color={Color.crimson} />
-				</div>
-			)}
-		</div>
-	)
+	<div className='items-center justify-center'>
+		<button className='group flex h-[190px] w-[150px] items-center justify-center overflow-visible rounded-2xl border-2 border-twilight p-5 duration-300 ease-linear hover:border-primary'>
+			<Tooltip additions={props.additions} />
+			<div>
+				<Icon icon={props.icon} size={80} color={props.color} />
+				<Heading size={24} color={Color.primary} bold center className='mt-4'>
+					{props.progress}%
+				</Heading>
+			</div>
+		</button>
+		<Heading center size={24} className='mt-2'>
+			{props.title}
+		</Heading>
+		{props.loved && (
+			<div className='absolute top-[-10px] ml-[-10px] rounded-full bg-twilight p-2'>
+				<Icon icon={HiFire} size={32} color={Color.crimson} />
+			</div>
+		)}
+	</div>
+)
 
 export default Stack

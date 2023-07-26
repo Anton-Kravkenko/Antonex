@@ -8,6 +8,7 @@ interface CounterProps {
 	description: string
 }
 const Counter: FC<CounterProps> = props => (
+	<div className='flex w-full items-center justify-center sm:block sm:w-fit'>
 		<div>
 			<Heading color={Color.primary} size={56} bold>
 				{props.number}+
@@ -16,6 +17,7 @@ const Counter: FC<CounterProps> = props => (
 				{props.description}
 			</Description>
 		</div>
-	)
+	</div>
+)
 
 export default Counter

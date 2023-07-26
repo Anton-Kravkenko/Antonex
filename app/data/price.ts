@@ -8,7 +8,6 @@ export const price = [
 		id: 0,
 		title: 'Hourly Rate',
 		price: '$20',
-		period: 'Hours',
 		color: '#E0CBA8',
 		icon: BsHandThumbsUpFill,
 		description:
@@ -18,7 +17,6 @@ export const price = [
 		id: 1,
 		title: 'Complex Mobile App',
 		price: '$1000-3000+',
-		period: 'One Time',
 		icon: HiTrophy,
 		color: '#FA7921',
 		hit: true,
@@ -29,7 +27,6 @@ export const price = [
 		id: 2,
 		title: 'Small Mobile App',
 		price: '$1000+',
-		period: 'One Time',
 		icon: TbDeviceMobileCode,
 		color: '#779FA1',
 		description:
@@ -39,7 +36,6 @@ export const price = [
 		id: 4,
 		title: 'Small Bug Fix',
 		price: '$50-100+',
-		period: 'One Time',
 
 		color: '#E94F37',
 		icon: AiFillBug,

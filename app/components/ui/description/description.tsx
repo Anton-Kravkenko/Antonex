@@ -9,16 +9,16 @@ interface DescriptionProps
 	center?: boolean
 }
 const Description: FC<DescriptionProps> = ({ children, style, ...props }) => (
-		<h5
-			style={{
-				fontSize: props.size,
-				color: props.color,
-				textAlign: props.center ? 'center' : 'left',
-				...style
-			}}
-			{...props}>
-			{children}
-		</h5>
-	)
+	<h5
+		style={{
+			fontSize: props.size,
+			color: props.color,
+			textAlign: props.center ? 'center' : 'left',
+			...style
+		}}
+		{...props}>
+		{children}
+	</h5>
+)
 
 export default Description
