@@ -8,7 +8,7 @@ import { AiOutlineHome } from 'react-icons/ai'
 
 const Home = () => (
 	<SectionBox mt={10} title={'Home'} icon={AiOutlineHome}>
-		<h2 className='mt-2 text-3xl leading-[2rem]  lg:text-5xl lg:leading-[4rem]'>
+		<h2 className='mt-2 text-3xl leading-[2.5rem]  lg:text-5xl lg:leading-[4rem]'>
 			Say Hi from {''}
 			<a
 				className='font-bold text-primary'
@@ -16,7 +16,7 @@ const Home = () => (
 				Anton
 			</a>
 			, Mobile Developer <br /> who <span className='text-crimson'>loves</span>{' '}
-			to code and <br /> create new things for people 🚀
+			to code and create new things for people 🚀
 		</h2>
 		<Description className='mt-4 w-[80%]' color={Color.charcoal}>
 			{

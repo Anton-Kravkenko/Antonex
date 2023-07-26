@@ -2,6 +2,7 @@ import SocialMediaIcons from '@/app/components/sections/left-bar/ui/social-media
 import Button from '@/app/components/ui/button/button'
 import Description from '@/app/components/ui/description/description'
 import Heading from '@/app/components/ui/heading/heading'
+import { about } from '@/app/data/about'
 import { Color } from '@/app/utils/colors'
 import Image from 'next/image'
 
@@ -9,7 +10,7 @@ const LeftBar = () => (
 	<div className='bottom-5 top-5 hidden  w-[25%] rounded-2xl border-2 border-twilight p-8 xl:fixed xl:block xl:h-[calc(100vh-2.5rem)]'>
 		<div className='flex items-center  justify-between'>
 			<Heading color={Color.white} bold>
-				👋 Anton K.
+				👋 {about.name}
 			</Heading>
 			<div className='flex gap-5'>
 				<Description size={12}>
@@ -31,7 +32,9 @@ const LeftBar = () => (
 		<Description center color={Color.charcoal}>
 			All rights reserved © {new Date().getFullYear()}
 		</Description>
-		<SocialMediaIcons />
+		<div className='mt-5 flex items-center justify-center gap-5'>
+			<SocialMediaIcons size={35} />
+		</div>
 		<Button
 			href={'mailto: antonkzavcenco05@gmail.com'}
 			className=' absolute bottom-5  left-5 right-5 items-center justify-center rounded-xl text-center text-xl font-bold'>

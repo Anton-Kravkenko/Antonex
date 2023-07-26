@@ -1,6 +1,6 @@
+import { AiFillInstagram } from 'react-icons/ai'
 import { BsGithub, BsTelegram } from 'react-icons/bs'
 import { IoLogoWhatsapp } from 'react-icons/io'
-import { TbBrandInstagram } from 'react-icons/tb'
 
 export const githubLink = 'https://github.com/Anton-Kravkenko'
 export const TelegramLink = 'https://t.me/AntonKravcenco'
@@ -26,6 +26,6 @@ export const socialMediaIcons = [
 	{
 		id: 4,
 		href: InstagramLink,
-		icon: TbBrandInstagram
+		icon: AiFillInstagram
 	}
 ]
