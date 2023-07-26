@@ -9,8 +9,7 @@ interface TitleProps
 	bold?: boolean
 	center?: boolean
 }
-const Heading: FC<TitleProps> = ({ style, ...props }) => {
-	return (
+const Heading: FC<TitleProps> = ({ style, ...props }) => (
 		<h2
 			style={{
 				fontSize: props.size || '24px',
@@ -23,6 +22,5 @@ const Heading: FC<TitleProps> = ({ style, ...props }) => {
 			{props.children}
 		</h2>
 	)
-}
 
 export default Heading
