@@ -214,16 +214,16 @@ export const tech = [
 				title: 'i18next'
 			},
 			{
-				id: 9,
-				color: '#AA3E98',
-				icon: SiStorybook,
-				title: 'Storybook'
-			},
-			{
 				id: 11,
 				color: '#F8333C',
 				title: 'Jest',
 				icon: GiJesterHat
+			},
+			{
+				id: 9,
+				color: '#AA3E98',
+				icon: SiStorybook,
+				title: 'Storybook'
 			},
 
 			{

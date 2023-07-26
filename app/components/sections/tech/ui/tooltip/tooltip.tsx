@@ -8,11 +8,11 @@ export interface TooltipProps {
 	additions: TechAdditions[]
 }
 const Tooltip: FC<TooltipProps> = ({ additions }) => (
-		<span className='absolute bottom-[-50px] z-50 flex w-fit scale-0 flex-wrap rounded-lg bg-twilight p-2 transition-all duration-300 group-hover:scale-100'>
+		<span className='xl:bottom-[-50px] lg:justify-normal left-0 justify-between w-fit absolute z-50 flex scale-0 flex-wrap rounded-lg bg-twilight p-2 transition-all duration-300 group-hover:scale-100'>
 			{additions.map(item => (
 					<div
 						key={item.id}
-						className='m-2 scale-100 rounded-xl border-2 border-dusk p-4 duration-75 ease-linear hover:scale-105 hover:border-primary'>
+						className='w-[100%] lg:w-fit m-2 scale-100 rounded-xl border-2 border-dusk p-4 duration-75 ease-linear hover:scale-105 hover:border-primary'>
 						<Icon
 							icon={item.icon}
 							className='mx-auto'

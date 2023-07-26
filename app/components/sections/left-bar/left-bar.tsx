@@ -6,7 +6,7 @@ import { Color } from '@/app/utils/colors'
 import Image from 'next/image'
 
 const LeftBar = () => (
-		<div className='fixed bottom-5 top-5 h-[calc(100vh-2.5rem)] w-[25%] rounded-2xl border-2 border-twilight p-8'>
+		<div className='hidden xl:fixed xl:block  bottom-5 top-5 xl:h-[calc(100vh-2.5rem)] w-[25%] rounded-2xl border-2 border-twilight p-8'>
 			<div className='flex items-center  justify-between'>
 				<Heading color={Color.white} bold>
 					👋 Anton K.
@@ -22,7 +22,7 @@ const LeftBar = () => (
 				alt={'Anton'}
 				width={200}
 				height={200}
-				className='mb-10 mt-5 h-[250px] w-full cursor-pointer rounded-xl object-cover transition-all duration-500 ease-in-out hover:scale-105 active:scale-100'
+				className='mb-10 mt-5 h-[40%] w-full cursor-pointer rounded-xl object-cover transition-all duration-500 ease-in-out hover:scale-105 active:scale-100'
 				style={{ filter: 'grayscale(70%)' }}
 			/>
 			<Heading center className='mb-2'>

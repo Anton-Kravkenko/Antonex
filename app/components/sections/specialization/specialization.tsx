@@ -11,7 +11,7 @@ const Specialization = () => (
 			{specialization.map(item => (
 					<SpecializationItem
 						key={item.id}
-						size={36}
+						size={32}
 						title={item.title}
 						description={item.description}
 						icon={item.icon}

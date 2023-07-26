@@ -10,7 +10,7 @@ export default function Home() {
 	return (
 		<div className='items-center justify-between p-4'>
 			<LeftBar />
-			<div className='relative left-[30%] w-[70%] p-8'>
+			<div className='relative sm:p-2  sm:left-0 sm:w-full  xl:p-8  xl:left-[30%] xl:w-[70%]'>
 				<HomeSection />
 				<Specialization />
 				<Tech />

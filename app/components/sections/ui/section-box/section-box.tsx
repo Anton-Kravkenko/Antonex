@@ -7,9 +7,11 @@ interface SectionBoxProps extends IconTypeProps {
 	mt?: number
 	title: string
 	description: string | JSX.Element
+	descriptionSize?: 18 | 24 | 32 | 48 | 56 | 64
 }
 const SectionBox: FC<PropsWithChildren<SectionBoxProps>> = ({
 	children,
+	descriptionSize = 48,
 	mt = 180,
 	...props
 }) => (
@@ -18,9 +20,9 @@ const SectionBox: FC<PropsWithChildren<SectionBoxProps>> = ({
 				marginTop: mt
 			}}>
 			<SectionLink title={props.title} icon={props.icon} />
-			<Heading size={48} className='mt-2'>
-				{props.description}
-			</Heading>
+			<Heading size={descriptionSize} className='mt-2'>
+					{props.description}
+				</Heading>
 			{children}
 		</div>
 	)

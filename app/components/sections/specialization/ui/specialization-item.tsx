@@ -12,17 +12,19 @@ interface SpecializationItemProps extends Omit<IconProps, 'href'> {
 const SpecializationItem: FC<SpecializationItemProps> = props => (
 		<Button
 			type={'twilight'}
-			className='mt-4 flex w-[80%] justify-between rounded-xl p-4
+			className='mt-4 flex xl:w-[80%] justify-between rounded-xl p-4 sm:w-full
 		'>
 			<div>
-				<Heading size={24} bold className='mt-1'>
+				<Heading size={24} bold className='mt-1 mb-4'>
 					{props.title}
 				</Heading>
-				<Description className='w-[70%]' color={Color.charcoal} size={16}>
+				<Description className='xl:w-[70%] smL w-full' color={Color.charcoal} size={16}>
 					{props.description}
 				</Description>
 			</div>
+			<div>
 			<Icon icon={props.icon} size={props.size} color={props.color} />
+			</div>
 		</Button>
 	)
 
