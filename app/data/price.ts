@@ -7,7 +7,7 @@ export const price = [
 	{
 		id: 0,
 		title: 'Hourly Rate',
-		price: '$20',
+		price: '$18-20',
 		color: '#E0CBA8',
 		icon: BsHandThumbsUpFill,
 		description:

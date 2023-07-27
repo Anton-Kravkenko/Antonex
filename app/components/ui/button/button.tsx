@@ -8,7 +8,7 @@ import { DivProps } from '@/app/types/element-types'
 import Link from 'next/link'
 import { FC, PropsWithChildren, memo } from 'react'
 
-interface ButtonProps extends DivProps {
+export interface ButtonProps extends DivProps {
 	type?: 'primary' | 'twilight' | 'transparent' | 'dusk'
 	size?: 'sm' | 'md' | 'lg'
 	href?: string
