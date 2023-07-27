@@ -12,7 +12,6 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
-    "@storybook/web-components": "^7.1.1",
     "autoprefixer": "10.4.14",
     "next": "13.4.12",
     "postcss": "8.4.27",

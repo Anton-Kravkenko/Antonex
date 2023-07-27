@@ -2,6 +2,9 @@
 const nextConfig = {
 	images: {
 		domains: ['avatars.githubusercontent.com']
+	},
+	experimental: {
+		outputFileTracingIgnores: ['**canvas**', '**swc/core**']
 	}
 }
 
