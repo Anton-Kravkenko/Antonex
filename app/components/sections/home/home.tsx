@@ -2,6 +2,7 @@
 import Counter from '@/app/components/sections/home/ui/counter/counter'
 import SectionBox from '@/app/components/sections/ui/section-box/section-box'
 import Description from '@/app/components/ui/description/description'
+import { about } from '@/app/data/about'
 import { counterData } from '@/app/data/counter'
 import { Color } from '@/app/utils/colors'
 import { AiOutlineHome } from 'react-icons/ai'
@@ -19,9 +20,7 @@ const Home = () => (
 			to code and create new things for people 🚀
 		</h2>
 		<Description className='mt-4 w-[80%]' color={Color.charcoal}>
-			{
-				'Im code beautiful and fast mobile apps. I love to work with React Native. I have experience in developing mobile applications for Android and iOS'
-			}
+			{about.homeDescription}
 		</Description>
 
 		<div className='mt-10 flex flex-wrap gap-16'>

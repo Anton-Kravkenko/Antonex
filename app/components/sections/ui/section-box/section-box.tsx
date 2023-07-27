@@ -1,4 +1,4 @@
-import SectionLink from '@/app/components/sections/ui/section-link/section.link'
+import SectionLink from '@/app/components/sections/ui/section-box/ui/section-link/section.link'
 import Heading from '@/app/components/ui/heading/heading'
 import { IconTypeProps } from '@/app/types/global'
 import { FC, PropsWithChildren } from 'react'

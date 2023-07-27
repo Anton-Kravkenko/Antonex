@@ -1,4 +1,4 @@
-import { hoverAnimation } from '@/app/animation/hover'
+import { hoverOutAnimation } from '@/app/animation/hover'
 import {
 	buttonBackground,
 	buttonPadding,
@@ -21,7 +21,7 @@ const Button: FC<PropsWithChildren<ButtonProps>> = ({
 }) => {
 	const button = (
 		<div
-			className={`${hoverAnimation} ${className} cursor-pointer font-bold`}
+			className={`${hoverOutAnimation} ${className} cursor-pointer font-bold`}
 			style={{
 				backgroundColor: buttonBackground[props.type || 'primary'],
 				fontSize: fontSize[props.size || 'md'],

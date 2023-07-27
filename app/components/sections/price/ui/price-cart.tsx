@@ -1,3 +1,4 @@
+import { hoverInAnimation } from '@/app/animation/hover'
 import Description from '@/app/components/ui/description/description'
 import Heading from '@/app/components/ui/heading/heading'
 import Icon, { IconProps } from '@/app/components/ui/icon/icon'
@@ -12,7 +13,7 @@ interface PriceCartProps extends Omit<IconProps, 'href'> {
 }
 const PriceCart: FC<PriceCartProps> = props => (
 	<div
-		className='m-2 ml-0 inline-block w-full scale-100 rounded-xl border-0 bg-twilight p-4 duration-75 ease-linear hover:scale-95 active:scale-100 lg:w-[400px]'
+		className={`${hoverInAnimation} m-2 ml-0 inline-block w-full rounded-xl border-0 bg-twilight p-4 lg:w-[400px]`}
 		style={{
 			border: props.hit ? '1px solid #FA7921' : '2px solid #1E1E1E'
 		}}>

@@ -1,4 +1,4 @@
-import { hoverAnimation } from '@/app/animation/hover'
+import { hoverOutAnimation } from '@/app/animation/hover'
 import { clickProps, stylesProps } from '@/app/types/element-types'
 import { IconTypeProps } from '@/app/types/global'
 import { ColorProps } from '@/app/utils/colors'
@@ -16,7 +16,7 @@ export interface IconProps
 const Icon: FC<IconProps> = ({ className, ...props }) => {
 	const icon = (
 		<props.icon
-			className={`${hoverAnimation} ${className}`}
+			className={`${hoverOutAnimation} ${className}`}
 			size={props.size}
 			color={props.color}
 		/>
