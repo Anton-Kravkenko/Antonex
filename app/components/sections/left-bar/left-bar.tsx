@@ -27,7 +27,7 @@ const LeftBar = () => (
 			style={{ filter: 'grayscale(70%)' }}
 		/>
 		<Heading center className='mb-2'>
-			Middle Developer <br /> Based in Poland 🇲🇨
+			Middle Developer <br /> Based in Poland 🇵🇱
 		</Heading>
 		<Description center color={Color.charcoal}>
 			All rights reserved © {new Date().getFullYear()}
