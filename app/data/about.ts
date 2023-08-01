@@ -12,7 +12,7 @@ export const about = {
 			level: 'A2'
 		},
 		{
-			name: 'Polish  🇲🇨',
+			name: 'Polish  🇵🇱',
 			level: 'B2'
 		},
 		{
